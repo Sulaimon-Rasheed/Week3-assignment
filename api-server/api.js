@@ -120,7 +120,7 @@ function updateItem(req, res) {
       if (err) {
         serverError()
       }
-      res.end(JSON.stringify(update));
+      res.end(JSON.stringify(itemsArrayOfObj[itemIndex]));
     });
   });
 }
